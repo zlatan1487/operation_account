@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "operation"
+version = "0.1.0"
+description = ""
+authors = ["zlatan1487 <vitalik.karpukhin@list.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+start-tests = 'main:last_five_executed_operations'
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
